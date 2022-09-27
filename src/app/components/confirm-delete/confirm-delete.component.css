@@ -1,0 +1,36 @@
+.cancel{
+    /* background-color: #2B2647;
+    color: grey;
+    float:right;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    font-size: smaller;
+    border-radius: 2px; */
+    background-color: #717177;
+    color: white;
+    font-family: 'Segoe UI';
+    font-weight: 700;
+    outline: none !important;
+    }
+    
+    .yes{
+        /* background-color: #EF7A2D;
+        color: #2B2647;
+        float:right;
+        border: none;
+        padding: 10px 10px 10px 10px;
+        font-size: smaller;
+        border-radius: 2px; */
+        background-color:hsla(0, 93%, 57%, 0.843);
+        color: white;
+        font-family: 'Segoe UI';
+        font-weight: 700;
+        margin-left: 53px;
+        width: 28%;
+        outline: none !important;
+     }
+
+     .main-div{
+         background-color: "#ffffff" !important;
+       
+     }

@@ -1,0 +1,123 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-7 pt-2">
+            <p class="heading">
+                <mdb-icon fas icon="user" class="title-icon"></mdb-icon>
+                Edit Dealer Details
+            </p>
+        </div>
+        <!-- <div class="col-lg-6 pt-2">
+           
+        </div> -->
+        <div class="col-lg-4 ">
+     
+        </div>
+        <div class="col-lg-1 pt-2" style="text-align: right;">
+            <mdb-icon fas style=" color: #d0112b;cursor: pointer;font-size: 24px;" icon="times" mdbTooltip="Close" placement="left"
+              (click)="onClose()">
+            </mdb-icon>
+        </div>
+    </div>
+    <section class="no-padding-bottom">
+        <div class="container-fluid">
+            <div class="col-lg-12 pb-2 pl-0" style="font-weight: 500;font-family: 'Segoe UI';">
+                <!-- <span style="border-bottom: 2px solid #d0112b;">Add User Information</span> -->
+            </div>
+            
+            <form >
+              <div class="row">
+                  <div class="col-lg-6 ">
+                      <label class="label">Date</label><br>
+                      <mat-form-field class="example-full-width" [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                          <mat-label> Date</mat-label>
+                          <input type="date" matInput autocomplete="off" required formControlName="productName">
+                         
+                        </mat-form-field>
+                  </div>
+                  <div class="col-lg-6 " >
+                      <label class="label">City</label><br>
+                      <mat-form-field class="example-full-width " [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                          <mat-label>City</mat-label>
+                          <input type="text" matInput  autocomplete="off" required formControlName="productCode">
+                          <!-- <mat-error *ngIf="addProductForm.controls['productCode'].invalid">{{getErrorProductCode()}}</mat-error> -->
+                        </mat-form-field>
+                   </div>
+
+                   <div class="col-lg-6">
+                      <label class="label"> Country</label><br>
+                        <mat-form-field class="example-full-width" [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                          <mat-label>Country</mat-label>
+                          <input type="text" matInput  autocomplete="off" required formControlName="productCode">
+                          
+                        </mat-form-field>
+                        <!-- <p>{{selectedProductCategory}}</p> -->
+                       
+                   </div>
+                   <div class="col-lg-6">
+                      <label class="label">Dealer ID</label><br>
+                      <mat-form-field class="example-full-width" [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                        <mat-label>Dealer ID</mat-label>
+                        <input type="number" matInput  autocomplete="off" required formControlName="productCode">
+                      </mat-form-field>
+                       <!-- <p>{{selectedProductSpecies}}</p> -->
+                   </div>
+                   <div class="col-lg-6">
+                      <label class="label">Dealer Name</label><br>
+                      <mat-form-field class="example-full-width" [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                          <mat-label>Dealer Name</mat-label>
+                          <input type="text" matInput formControlName="packageSize" autocomplete="off" required formControlName="packageSize">
+                          <!-- <mat-error *ngIf="addProductForm.controls['packageSize'].invalid">{{getErrorProductSize()}}</mat-error> -->
+                        </mat-form-field>
+                   </div>
+                   
+                   <!-- Upload image -->
+
+                    <div class="col-lg-6">
+                      
+                      <label class="label">Location</label><br>
+                      <mat-form-field class="example-full-width " [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                          <mat-label>Location</mat-label>
+                          <input type="text" matInput  autocomplete="off" required formControlName="productCode">
+                              <!-- <mat-error *ngIf="addProductForm.controls['productCode'].invalid">{{getErrorProductCode()}}</mat-error> -->
+                        </mat-form-field>
+                    </div>
+                    <div class="col-lg-6 ">
+                      <label class="label">Phone Number</label><br>
+                      <mat-form-field class="example-full-width" [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                          <mat-label> Phone Number</mat-label>
+                          <input type="number" matInput autocomplete="off" required formControlName="productName">
+                          <!-- <mat-error *ngIf="addProductForm.controls['productName'].invalid">{{getErrorProductName()}}</mat-error> -->
+                        </mat-form-field>
+                  </div>
+                  <div class="col-lg-6 ">
+                    <label class="label">Status</label><br>
+                    <mat-form-field class="example-full-width " [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                        <mat-label>Status</mat-label>
+                        <input type="date" matInput formControlName="activeIngredients" autocomplete="off" required formControlName="activeIngredients">
+                        <!-- <mat-error *ngIf="addProductForm.controls['activeIngredients'].invalid">{{getErrorProductIngredients()}}</mat-error> -->
+                      </mat-form-field>
+                  </div>
+                  
+                    
+              </div>
+
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" ></div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" style="float:right;">
+                <div class="form-group" >
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" >
+                      <button type="submit" mat-raised-button class="login-btn"  >SUBMIT</button>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                      <button  mat-raised-button class="cancel-btn" routerLink="/product">CANCEL</button>
+                    </div>
+                  </div>                                             
+                </div>
+              </div>
+                    
+          </form>
+
+            
+        </div>
+    </section>
+</div>

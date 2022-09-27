@@ -1,0 +1,149 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-7 pt-2">
+            <p class="heading">
+                <mdb-icon fas icon="user" class="title-icon"></mdb-icon>
+                Generate CMS User
+            </p>
+        </div>
+        <!-- <div class="col-lg-6 pt-2">
+           
+        </div> -->
+        <div class="col-lg-4 ">
+     
+        </div>
+        <div class="col-lg-1 pt-2" style="text-align: right;">
+            <mdb-icon fas style=" color: #d0112b;cursor: pointer;font-size: 24px;" icon="times" mdbTooltip="Close" placement="left"
+                (click)="onClose()">
+            </mdb-icon>
+        </div>
+    </div>
+    <section class="no-padding-bottom">
+        <div class="container-fluid">
+            <div class="col-lg-12 pb-2 pl-0" style="font-weight: 500;font-family: 'Segoe UI';">
+                <!-- <span style="border-bottom: 2px solid #d0112b;">Add User Information</span> -->
+            </div>
+            
+            <form [formGroup]='addProductForm' (ngSubmit)="addProduct();">
+              <div class="row">
+                  <div class="col-lg-6 ">
+                      <label class="label">User Name</label><br>
+                      <mat-form-field class="example-full-width" [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                          <mat-label> User Name</mat-label>
+                          <input type="text" matInput autocomplete="off" required formControlName="productName">
+                          <!-- <mat-error *ngIf="addProductForm.controls['productName'].invalid">{{getErrorProductName()}}</mat-error> -->
+                        </mat-form-field>
+                  </div>
+                  <div class="col-lg-6 " >
+                      <label class="label">User Email</label><br>
+                      <mat-form-field class="example-full-width " [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                          <mat-label>User Email</mat-label>
+                          <input type="email" matInput  autocomplete="off" required formControlName="productCode">
+                          <!-- <mat-error *ngIf="addProductForm.controls['productCode'].invalid">{{getErrorProductCode()}}</mat-error> -->
+                        </mat-form-field>
+                   </div>
+
+                   <div class="col-lg-6">
+                      <label class="label"> Phone Number</label><br>
+                        <mat-form-field class="example-full-width" [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                          <mat-label>Phone Number</mat-label>
+                          <input type="number" matInput  autocomplete="off" required formControlName="productCode">
+                          
+                        </mat-form-field>
+                        <!-- <p>{{selectedProductCategory}}</p> -->
+                       
+                   </div>
+                   <div class="col-lg-6">
+                      <label class="label">User Password</label><br>
+                      <mat-form-field class="example-full-width" [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                        <mat-label>User Password</mat-label>
+                        <input type="password" matInput  autocomplete="off" required formControlName="productCode">
+                      </mat-form-field>
+                       <!-- <p>{{selectedProductSpecies}}</p> -->
+                   </div>
+                   <div class="col-lg-6">
+                      <label class="label">Confirm Password</label><br>
+                      <mat-form-field class="example-full-width" [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                          <mat-label>Confirm Password</mat-label>
+                          <input type="password" matInput formControlName="packageSize" autocomplete="off" required formControlName="packageSize">
+                          <!-- <mat-error *ngIf="addProductForm.controls['packageSize'].invalid">{{getErrorProductSize()}}</mat-error> -->
+                        </mat-form-field>
+                   </div>
+                   
+                   <!-- Upload image -->
+
+                    <div class="col-lg-6">
+                      
+                      <label class="label">Zip Code</label><br>
+                      <mat-form-field class="example-full-width " [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                          <mat-label>Zip Code</mat-label>
+                          <input type="text" matInput  autocomplete="off" required formControlName="productCode">
+                              <!-- <mat-error *ngIf="addProductForm.controls['productCode'].invalid">{{getErrorProductCode()}}</mat-error> -->
+                        </mat-form-field>
+                    </div>
+                    <div class="col-lg-6 ">
+                      <label class="label">Address</label><br>
+                      <mat-form-field class="example-full-width" [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                          <mat-label> Address</mat-label>
+                          <input type="text" matInput autocomplete="off" required formControlName="productName">
+                          <!-- <mat-error *ngIf="addProductForm.controls['productName'].invalid">{{getErrorProductName()}}</mat-error> -->
+                        </mat-form-field>
+                  </div>
+                  <div class="col-lg-6 ">
+                    <label class="label">Date Of Birth</label><br>
+                    <mat-form-field class="example-full-width " [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                        <mat-label>Date Of Birth</mat-label>
+                        <input type="date" matInput formControlName="activeIngredients" autocomplete="off" required formControlName="activeIngredients">
+                        <!-- <mat-error *ngIf="addProductForm.controls['activeIngredients'].invalid">{{getErrorProductIngredients()}}</mat-error> -->
+                      </mat-form-field>
+                  </div>
+                  <div class="col-lg-6 " >
+                    <div class="col-lg-12 pl-0">
+                      <label class="label-upload-img">Upload Profile Image (1 Attachment only for max size 5 MB)</label><br>
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <button mat-raised-button color="browse" for="fileInput" (click)="fileInput.value='';fileInput.click()"
+                            >Browse Image</button> &nbsp;&nbsp;
+                            
+                          </div>
+                          <div class="col-lg-8">
+                            <span style="position:relative;" *ngIf="isURL">                        
+                              <span *ngFor="let filename of thumbnailArray">
+                             <span> <i class="{{getFileExtension(filename)}}" style="color:#D0112B;;font-size:50px;padding-left: 20px;padding-top: 10px;"
+                              aria-hidden="true"></i> </span> 
+                                   <!-- <span class="wrap-img-doc-txt" style="font-weight: 400;font-family: 'Segoe UI'; padding-left: 2px;">
+                                     {{filename}}
+                                 </span>  -->
+                           </span>                            
+                      </span>
+             
+                      <input  type='file'  #fileInput hidden accept='image/*' (change)="onSelectFile($event)" class="ng-hide" formControlName="isURL" > 
+                      <!-- <mat-error *ngIf="addProductForm.controls['isURL'].invalid">{{getProductImgError()}}</mat-error> -->
+                            </div>
+                        </div>                    
+                    </div>
+                      
+                   </div>
+                    
+              </div>
+
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" ></div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" style="float:right;">
+                <div class="form-group" >
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" >
+                      <button type="submit" mat-raised-button class="login-btn"  >SUBMIT</button>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                      <button  mat-raised-button class="cancel-btn" routerLink="/product">CANCEL</button>
+                    </div>
+                  </div>                                             
+                </div>
+              </div>
+                    
+          </form>
+
+            
+        </div>
+    </section>
+</div>

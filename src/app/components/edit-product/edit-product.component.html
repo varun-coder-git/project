@@ -1,0 +1,172 @@
+<section class="no-padding-bottom">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-7 pb-4 pl-0" style="font-weight: 500;font-family: 'Segoe UI';">
+            <span style="border-bottom: 2px solid #d0112b;">Edit Product Information</span>
+        </div>
+        
+        <div class="col-lg-4 ">
+     
+        </div>
+        <div class="col-lg-1 pt-2" style="text-align: right;">
+            <mdb-icon fas style=" color: #d0112b;cursor: pointer;font-size: 24px;" icon="times" mdbTooltip="Close" placement="left"
+                (click)="onClose()">
+            </mdb-icon>
+        </div>
+      </div>
+            <form [formGroup]='addProductForm' (ngSubmit)="addProduct();">
+                <div class="row">
+                    <div class="col-lg-6 ">
+                        <label class="label">Product Name</label><br>
+                        <mat-form-field class="example-full-width" [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                            <mat-label> Product Name</mat-label>
+                            <input type="text" matInput autocomplete="off" required formControlName="productName">
+                            <mat-error *ngIf="addProductForm.controls['productName'].invalid">{{getErrorProductName()}}</mat-error>
+                          </mat-form-field>
+                    </div>
+                    <div class="col-lg-6 " >
+                        <label class="label">Product Code</label><br>
+                        <mat-form-field class="example-full-width " [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                            <mat-label>Product Code</mat-label>
+                            <input type="text" matInput  autocomplete="off" required formControlName="productCode">
+                            <mat-error *ngIf="addProductForm.controls['productCode'].invalid">{{getErrorProductCode()}}</mat-error>
+                          </mat-form-field>
+                     </div>
+
+                     <div class="col-lg-6">
+                        <label class="label">Product Category</label><br>
+                          <mat-form-field class="example-full-width" [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                            <mat-label>Product Category</mat-label>
+                            <mat-select placeholder="Product Category" formControlName="productCategory" multiple [(value)]="selectedProductCategory">
+                              <mat-option *ngFor="let cat of productCategoryList" [value]="cat.ID">{{cat.AnimalCategory}}</mat-option>
+                            </mat-select>
+                            <mat-error *ngIf="addProductForm.controls['productCategory'].invalid">{{getErrorProductCategory()}}</mat-error>
+                          </mat-form-field>
+                          <!-- <p>{{selectedProductCategory}}</p> -->
+                         
+                     </div>
+                     <div class="col-lg-6">
+                        <label class="label">Product Species</label><br>
+                        <mat-form-field class="example-full-width" [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                          <mat-label>Product Species</mat-label>
+                          <mat-select placeholder="Product Species" multiple formControlName="productSpecies" [(value)]="selectedProductSpecies" >
+                            <mat-option *ngFor="let specie of productSpeciesList" [value]="specie.ID">{{specie.SpeciesCategoryName}}</mat-option>
+                          </mat-select>
+                          <mat-error *ngIf="addProductForm.controls['productSpecies'].invalid">{{getErrorProductSpecies()}}</mat-error>
+                        </mat-form-field>
+                         <!-- <p>{{selectedProductSpecies}}</p> -->
+                     </div>
+                     <div class="col-lg-6">
+                        <label class="label">Package Size</label><br>
+                        <mat-form-field class="example-full-width" [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                            <mat-label>Package Size</mat-label>
+                            <input type="text" matInput formControlName="packageSize" autocomplete="off" required formControlName="packageSize">
+                            <mat-error *ngIf="addProductForm.controls['packageSize'].invalid">{{getErrorProductSize()}}</mat-error>
+                          </mat-form-field>
+                     </div>
+                     <div class="col-lg-6 ">
+                        <label class="label">Active Ingredients</label><br>
+                        <mat-form-field class="example-full-width " [hideRequiredMarker]="true" floatLabel='never' style="margin-top: -30px;">
+                            <mat-label>Active Ingredients</mat-label>
+                            <input type="text" matInput formControlName="activeIngredients" autocomplete="off" required formControlName="activeIngredients">
+                            <mat-error *ngIf="addProductForm.controls['activeIngredients'].invalid">{{getErrorProductIngredients()}}</mat-error>
+                          </mat-form-field>
+                      </div>
+                      <div class="col-lg-6">
+                        <!-- <div class="col-lg-12 pl-0">
+                            
+                            <label class="label-upload-img">Upload Product Image (1 Attachment only for max size 5 MB)</label><br>
+   
+                          
+                            <button mat-raised-button color="browse" for="fileInput" (click)="fileInput.value='';fileInput.click()"
+                            >Browse Image</button> &nbsp;&nbsp;
+                            <span style="position:relative;" *ngIf="isURL">
+                           
+                                
+                             <img src="{{urlProduct}}" class="img-upload" style="height: 50px;width: 50px;border-radius: 3%;" > 
+                             
+                             <span class="wrap-img-doc-txt" style="font-weight: 400;font-family: 'Segoe UI'; padding-left: 2px;">
+                                {{imageFileName}}
+                            </span>
+                             
+                         </span>
+                         <div style="margin-top:-20px;">
+                          <mat-form-field>
+                            <input  type='file'  #fileInput hidden accept='image/*' (change)="onSelectFile($event)" class="ng-hide" formControlName="isURL" > 
+                            <mat-error *ngIf="addProductForm.controls['isURL'].invalid">{{getProductImgError()}}</mat-error>
+                         
+                          </mat-form-field>
+                         </div>
+                         
+                   
+                              
+                        </div> -->
+                        <div class="col-lg-12 pl-0">
+                            <label class="label-upload">Upload Product Documents</label><br>
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <button mat-raised-button color="browse" for="fileInputPDF" (click)="fileInputPDF.value='';fileInputPDF.click()"
+                              >Browse Document</button> &nbsp;&nbsp;
+                              </div>
+                              <div class="col-lg-8">
+                                <span style="position:relative;" *ngIf="ispdfURL">
+                                  
+                                       
+                                  
+                           
+                                  <span *ngFor="let filename of thumbnailArray">
+                                 <span> <i class="{{getFileExtension(filename)}}" style="color:#D0112B;;font-size:50px;padding-left: 20px;padding-top: 10px;"
+                                  aria-hidden="true"></i> </span> 
+                                       <!-- <span class="wrap-img-doc-txt" style="font-weight: 400;font-family: 'Segoe UI'; padding-left: 2px;">
+                                         {{filename}}
+                                     </span>  -->
+                               </span>
+                                  
+                 
+                              
+                          </span>
+                 
+                               <input type='file' #fileInputPDF multiple hidden  (change)="onSelectFileDocument($event)">
+                                </div>
+                            </div>
+                            
+                            
+                       
+                        </div>
+                   
+                      </div>
+                      <div class="col-lg-6">
+                        <label class="label-desc">Description / Links</label><br>
+                        <mat-form-field class="example-full-width pb-3" appearance="outline" [hideRequiredMarker]="true" floatLabel='never' style="margin-top: 0px;">
+      
+                            <textarea matInput style="resize: none;" formControlName="descriptionLinks" placeholder="Description / Links" autocomplete="off" formControlName="descriptionLinks"></textarea>
+                           
+                          </mat-form-field>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" ></div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" >
+                        <div class="form-group">
+                    
+                          <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                              <button type="submit" mat-raised-button class="login-btn"  >SUBMIT</button>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                              <button  mat-raised-button class="cancel-btn" routerLink="/product">CANCEL</button>
+                            
+                           
+                            </div>
+                          </div>
+                          
+                         
+                         
+                        </div>
+                      </div>
+
+                </div>
+
+           
+            </form>
+        
+    </div>
+</section>

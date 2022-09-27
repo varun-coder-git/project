@@ -1,0 +1,164 @@
+<div class="d-flex align-items-stretch">
+    <!-- Sidebar Navigation-->
+    <nav id="sidebar"  *ngIf="showBigHeader">
+      <!-- Sidebar Header-->
+       <!-- Sidebar Header-->
+       <div class="sidebar-header d-flex align-items-center">
+        <div class="header-logo"><img src="../../../assets/img/Bimeda-Logo-White.png" alt="..." class="img-fluid">
+        </div>
+  
+    </div>
+    <hr>
+  
+    <!-- Sidebar Navidation Menus--><span class="heading">Bimeda Genuine</span>
+    <hr>
+    <ul class="list-unstyled">
+      
+        <li class="#"><a href="#" routerLink="/dashboard"> <img class="sidenav-icon" src="../../../assets/img/Icons/rocket2_w.png"><span>Dashboard</span> </a></li>
+        <li class="#"><a href="#" routerLink="/Customer"> <img class="sidenav-icon" src="../../../assets/img/Icons/customer_white.png"><span>Customers</span> </a></li>
+        <li class="#"><a href="#" routerLink="/Dealer"> <img class="sidenav-icon" src="../../../assets/img/Icons/customer2_w.png"><span>Dealers</span> </a></li>
+        <li><a href="#" routerLink="/product"> <img class="sidenav-icon" src="../../../assets/img/Icons/Products_white.png"><span>Products </span> </a></li>
+        <li class="#"><a href="#" routerLink="/qr"> <img class="sidenav-icon" src="../../../assets/img/Icons/qr_report_white.png"><span>QRs</span> </a></li>
+        <li class="#"><a href="#" routerLink="/feedback"> <img class="sidenav-icon" src="../../../assets/img/Icons/complains-white.png"><span>Feedback </span></a></li>
+        <li class="#"><a href="#" routerLink="/dealer-performance"> <img class="sidenav-icon" src="../../../assets/img/Icons/Dealer Performance_white.png"><span>Dealer Performance</span> </a></li>
+        <li class="active"><a href="#" routerLink="/genuinity-heatmap"> <img class="sidenav-icon" src="../../../assets/img/Icons/map_w.png"><span>Genuinity Heat Map</span></a></li>
+        <li class="#"><a href="#" routerLink="/help"> <img class="sidenav-icon" src="../../../assets/img/Icons/Help-white.png"><span>Help</span> </a></li>
+        <!-- </ul><span class="heading">Extras</span>
+        <ul class="list-unstyled"> -->
+        <div class="sidebar-header d-flex align-items-center">
+            <div class="bottom-logo"><img src="../../../assets/img/bray transparent sidemenu logo.png" alt="..."
+                    class="img-fluid"></div>
+  
+        </div>
+        
+  
+        <!-- <li> <a href="#"> <i class="icon-chart"></i>Demo </a></li>
+          <li> <a href="#"> <i class="icon-settings"></i>Demo </a></li>
+          <li> <a href="#"> <i class="icon-writing-whiteboard"></i>Demo </a></li>
+          <li> <a href="#"> <i class="icon-chart"></i>Demo </a></li> -->
+  
+    </ul>
+    </nav>
+    <nav id="sidebar" *ngIf="showSmallHeader" class="shrinked" >
+      <!-- Sidebar Header-->
+       <!-- Sidebar Header-->
+       <div class="sidebar-header d-flex align-items-center">
+        <div class="header-logo"><img src="../../../assets/img/Bimeda-Logo-White.png" alt="..." class="img-fluid">
+        </div>
+  
+    </div>
+    <hr>
+  
+    <!-- Sidebar Navidation Menus--><span class="heading">Bimeda Genuine</span>
+    <hr>
+    <ul class="list-unstyled">
+      
+        <li class="#" mdbTooltip="Dashboard" placement="right"><a href="#" routerLink="/dashboard"> <img class="sidenav-icon" src="../../../assets/img/Icons/rocket2_w.png" ><span>Dashboard</span> </a></li>
+        <li class="#" mdbTooltip="Customers" placement="right"><a href="#" routerLink="/Customer"> <img class="sidenav-icon" src="../../../assets/img/Icons/customer_white.png"><span>Customers</span> </a></li>
+        <li class="#" mdbTooltip="Dealers" placement="right"><a href="#" routerLink="/Dealer"> <img class="sidenav-icon" src="../../../assets/img/Icons/customer2_w.png"><span>Dealers</span> </a></li>
+        <li class="#" mdbTooltip="Products" placement="right"><a href="#" routerLink="/product"> <img class="sidenav-icon" src="../../../assets/img/Icons/Products_white.png"><span>Products </span> </a></li>
+        <li class="#" mdbTooltip="QRs" placement="right"><a href="#" routerLink="/qr"> <img class="sidenav-icon" src="../../../assets/img/Icons/qr_report_white.png"><span>QRs</span> </a></li>
+        <li class="#" mdbTooltip="Feedback" placement="right"><a href="#" routerLink="/feedback"> <img class="sidenav-icon" src="../../../assets/img/Icons/complains-white.png"><span>Feedback </span></a></li>
+        <li class="#" mdbTooltip="Dealer Performance" placement="right"><a href="#" routerLink="/dealer-performance"> <img class="sidenav-icon" src="../../../assets/img/Icons/Dealer Performance_white.png"><span>Dealer Performance</span> </a></li>
+        <li class="active" mdbTooltip="Genuinity Heat Map" placement="right"><a href="#" routerLink="/genuinity-heatmap"> <img class="sidenav-icon" src="../../../assets/img/Icons/map_w.png"><span>Genuinity Heat Map</span></a></li>
+        <li class="#" mdbTooltip="Help" placement="right"><a href="#" routerLink="/help"> <img class="sidenav-icon" src="../../../assets/img/Icons/Help-white.png"><span>Help</span> </a></li>
+        <!-- </ul><span class="heading">Extras</span>
+        <ul class="list-unstyled"> -->
+        <div class="sidebar-header d-flex align-items-center">
+            <div class="bottom-logo"><img src="../../../assets/img/bray transparent sidemenu logo.png" alt="..."
+                    class="img-fluid"></div>
+  
+        </div>
+        
+  
+        <!-- <li> <a href="#"> <i class="icon-chart"></i>Demo </a></li>
+          <li> <a href="#"> <i class="icon-settings"></i>Demo </a></li>
+          <li> <a href="#"> <i class="icon-writing-whiteboard"></i>Demo </a></li>
+          <li> <a href="#"> <i class="icon-chart"></i>Demo </a></li> -->
+  
+    </ul>
+    </nav>
+    <!-- Sidebar Navigation end-->
+    <div class="page-content" [ngClass]="{'active': showSmallHeader}">
+      <div class="page-header">
+        <div class="container-fluid">
+          <!-- <h2 class="h5 no-margin-bottom">Dashboard</h2> -->
+          <header class="header">   
+            <nav class="navbar navbar-expand-lg">
+       
+              <div class="container-fluid d-flex align-items-center justify-content-between">
+                <div class="navbar-header">
+           
+                  <button class="sidebar-toggle" (click)="sideBarToggleFunction()"><i class="fa fa-align-justify"></i></button>
+                    
+                      <!-- <mdb-icon fas icon="rocket" style="color: #d0112b;font-size: 21px;vertical-align: -2px;"></mdb-icon>  -->
+                      <img src="../../../assets/img/Icons/bimedaiconsupdated/map.png" style="height: 29px; width: 29px;">
+                      Genuinity Heat Map
+                  <!-- Sidebar Toggle Btn-->
+                  
+                </div>
+                <div class="right-menu list-inline no-margin-bottom">    
+              
+                  <!-- Log out               -->
+                  <div class="list-inline-item logout">                  
+                    <span class="d-none d-sm-inline"> 
+                      <img src="{{url}}{{profilePicture}}" style="float: right;" width="100%" class="rounded-circle usr-img .profile-img mr-2">
+              </span></div>
+              <div class="list-inline-item logout">                  
+                  <span class="d-none d-sm-inline"> 
+                      <h3 class="profile-paragraph-title m-0" >Welcome Super Admin! </h3>
+                      <h4 class="profile-paragraph m-0">{{userName | titlecase}} </h4>
+            </span></div>
+                <div class="list-inline-item logout">                  <span class="d-none d-sm-inline"> <img class="pl-4" src="../../../assets/img/logout_btn.png" style="cursor: pointer;float:right;"
+                  mdbTooltip="Logout" placement="bottom" (click)="logout();"/></span></div>
+                </div>
+              </div>
+            </nav>
+          </header>
+        </div>
+      </div>
+      <section class="no-padding-bottom">
+        <div class="container-fluid">
+            <!-- <div class="row">
+            <div class="col-lg-4">
+              
+             
+            </div>
+            <div class="col-lg-8">
+              
+            </div>
+          </div> -->  <div class="overlay" *ngIf="isSpinnerShow">
+    <div class="center"  
+    style="display: flex; justify-content: center; align-items: center;">
+   <mat-progress-spinner 
+     color="primary" class="mat-spinner-color"
+     mode="indeterminate">
+   </mat-progress-spinner></div>
+  </div>
+            <div class="row">
+                <!-- <div class="col-lg-12 pt-2" style="font-weight: 500;font-family: 'Segoe UI';">
+                    Complaint Heat Map
+                </div> -->
+                <div class="col-lg-12 pt-2" *ngIf="coordinateList">
+                    <!-- <img src="../../../assets/img/South Africa Heat Map.png" width="100%"> -->
+                    <agm-map  [latitude]="lat" [longitude]="lng" (mapReady)="onMapLoad($event)">
+                        <agm-marker [latitude]="lat" [longitude]="lng">
+                        <agm-info-window>Current location: <br>Latitude:{{lat}} <br>Longitude:{{lng}}<br>Address:{{currentLocation}}</agm-info-window></agm-marker>
+                    </agm-map>
+                      <!-- <agm-map #agmap   
+  [zoom]="7"
+  [disableDefaultUI]="false"
+  [zoomControl]="true"
+  [fitBounds]="true">
+    <agm-marker [agmFitBounds]="true" [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map> -->
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- <a [href]="sourcePath" [download]="fileName" >
+        Download
+      </a> -->
+  
+    </div>
+  </div>

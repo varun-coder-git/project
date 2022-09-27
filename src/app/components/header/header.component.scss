@@ -1,0 +1,211 @@
+.sidenav-icon{
+  margin-right: 12px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-right: 8px;
+  border-right: 1px solid #efa5a566;
+ height: 25px;
+}
+
+.profile-paragraph{
+  font-size:12px;
+  color:#000000;
+  font-weight: 500;
+  text-align: left;
+  }
+  agm-map {
+      height: 700px;
+    }
+    .bottom-logo{
+      width: 90%;
+      height: auto;
+      margin-left: 40px;
+    }
+.profile-paragraph-title{
+    font-size:12px;
+    color:#000000;
+ 
+    text-align: left;
+    }
+    .usr-img{
+      height: 43px;
+      width: 43px;
+      border: 1px solid #d0d0d0;
+      padding: 3px;
+      vertical-align: -12px;
+      border-radius: 50% !important;
+    }
+
+
+
+
+
+      .example-form {
+        min-width: 150px;
+        max-width: 500px;
+        width: 100%;
+      }
+      
+      .example-full-width {
+        width: 100%;
+      }
+  
+    ::ng-deep .mat-input-wrapper{
+      font-size: 10pt;
+    }
+    .mat-raised-button[disabled] {
+      background-color: #e2929d;
+      color: white;
+    }
+    input:focus { 
+      outline: none !important;
+     
+    }
+    .mat-browse:hover {
+      outline: none !important;
+      background-color: #D0112B !important;
+      color: #e9e9ee !important; 
+       font-weight: 600 !important;
+      font-family: 'Segoe UI';
+      border: 1px solid #D0112B;
+    }
+  
+    .mat-browse { outline: none !important;
+
+      background-color: #e9e9ee !important;
+      color: #D0112B !important; 
+       font-weight: 600 !important;
+      font-family: 'Segoe UI';
+      border: 1px solid #D0112B;
+    
+    }
+    .label-upload{
+      padding-top: 14px;
+      color: #000000;
+      font-size: 14px;
+      font-family: 'Segoe UI';
+      font-weight: 600 !important;
+    }
+    .label-upload-img{
+      // padding-top: 14px;
+      color: #000000;
+      font-size: 14px;
+      font-family: 'Segoe UI';
+      font-weight: 600 !important;
+    }
+    .label-upload-img:after{
+      content: " *";
+      color: #e32;
+  position: absolute;
+  margin: 0px 0px 0px 2px;
+  font-size: 18px;
+  padding: 0 5px 0 0;
+    }
+    .label:after{
+      content: " *";
+      color: #e32;
+  position: absolute;
+  margin: 0px 0px 0px 2px;
+  font-size: 18px;
+  padding: 0 5px 0 0;
+    }
+    .img-upload {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .login-btn{
+      width:100%;
+      /* margin-top:30px; */
+        background-color: #D0112B;
+        color: white;
+        border-radius: 5px;
+      
+        height: 45px;
+        border: none;
+        
+    }
+    .AClass{
+      right:0px;
+      position: absolute;
+  }
+  .close{
+    opacity: 1.0 !important;
+    padding-right: 3px !important;
+    text-shadow: none !important;
+    cursor: pointer;
+   }
+   mat-label{
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    font-weight: 400 !important;
+   }
+   .label-desc{
+    padding-top: 0px;padding-bottom: 0px;
+    color: #000000;
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    font-weight: 600 !important;
+  }
+  .label{
+    padding-top: 0px;padding-bottom: 0px;
+    color: #000000;
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    font-weight: 600 !important;
+  }
+   .cancel-btn{
+    width:100%;
+    /* margin-top:30px; */
+      background-color: #4b4a52;
+      color: white;
+      border-radius: 5px;
+    
+      height: 45px;
+      border: none;
+      
+  }    ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-end,
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-start {
+      border-width: 1px !important;
+      color: #000;
+  }
+    .access-code-btn[disabled]{
+      background-color: #666464;
+      color: white;
+    }
+    .wrap-img-doc-txt{
+      width: 15em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    }
+    textarea.mat-input-element {
+      height: 100px !important;
+      margin-top: -18px;
+      font-size: 14px;
+      font-family: 'Segoe UI';
+    }
+    .input-size{
+      font-size: 12px !important;
+      font-family: 'Segoe UI';
+    }
+    ::ng-deep .mat-focused .mat-form-field-label {
+      /*change color of label*/
+      color: #666464 !important;
+     }
+    
+     ::ng-deep.mat-form-field-underline {
+      /*change color of underline*/
+      background-color: #666464 !important;
+    } 
+    
+    ::ng-deep.mat-form-field-ripple {
+     /*change color of underline when focused*/
+     background-color: #666464 !important;;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  .mat-form-field-underline {
+      /*change color of underline*/
+      color: #e9e9ee !important;
+      background-color: #e9e9ee !important;
+    } 
+    

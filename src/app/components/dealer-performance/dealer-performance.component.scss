@@ -1,0 +1,351 @@
+.sidenav-icon{
+  margin-right: 12px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-right: 8px;
+  border-right: 1px solid #efa5a566;
+ height: 25px;
+}
+
+
+  agm-map {
+      height: 700px;
+    }
+
+ 
+ 
+    .overlay{
+      height:100vh;
+      width:100%;
+      background-color:white;
+      z-index:    10;
+      top:        0; 
+      left:       0; 
+      position:   fixed;
+    }
+    .center {
+      position: absolute;
+      background-color:white;
+      top: 50%;
+      left: 50%;
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+    }
+    .profile-paragraph{
+      font-size:12px;
+      color:#000000;
+      font-weight: 500;
+      text-align: left;
+      }
+      agm-map {
+          height: 700px;
+        }
+        .bottom-logo{
+          width: 90%;
+          height: auto;
+          margin-left: 40px;
+        }
+    .profile-paragraph-title{
+        font-size:12px;
+        color:#000000;
+     
+        text-align: left;
+        }
+        .usr-img{
+          height: 43px;
+          width: 43px;
+          border: 1px solid #d0d0d0;
+          padding: 3px;
+          vertical-align: -12px;
+          border-radius: 50% !important;
+        }
+   
+
+.mat-header-cell{
+  color:#ffffff;
+  font-size: 14px;
+  font-family: 'Segoe UI';
+}
+.mat-cell{
+  color:#000000;
+  font-size: 14px;
+  font-family: 'Segoe UI';
+  font-weight: 400;
+}
+.label{
+ 
+  color: #000000;
+  font-size: 14px;
+  font-family: 'Segoe UI';
+  font-weight: 600 !important;
+}
+.label-new{
+ 
+  color: #e9e9ee;
+  font-size: 14px;
+  font-family: 'Segoe UI';
+  font-weight: 600 !important;
+}
+.form-group{
+  margin-bottom: 0px !important;
+}
+.input{
+    background-color: #ffffff;
+    border: 1px solid #CCCCCC;
+    color:black;
+    font-size: small;
+    font-family: 'Segoe UI';
+
+}
+// input[type="date"]:before {
+//   content: attr(placeholder) !important;
+//   color: #aaa;
+//   margin-right: 0.5em;
+// }
+// input[type="date"]:focus:before,
+// input[type="date"]:valid:before {
+//   content: "";
+// }
+::-webkit-scrollbar {
+  display: none;
+}
+  table{
+    width: 150%;
+   }
+   
+   .mat-column-date {
+     word-wrap: break-word !important;
+     white-space: unset !important;
+     flex: 0 0 12% !important;
+     width: 12% !important;
+     overflow-wrap: break-word;
+     word-wrap: break-word;
+   
+     word-break: break-word;
+   
+     -ms-hyphens: auto;
+     -moz-hyphens: auto;
+     -webkit-hyphens: auto;
+     hyphens: auto;
+   }
+   
+   .mat-column-city {
+     word-wrap: break-word !important;
+     white-space: unset !important;
+     flex: 0 0 12% !important;
+     width: 12% !important;
+     overflow-wrap: break-word;
+     word-wrap: break-word;
+     
+     word-break: break-word;
+   
+     -ms-hyphens: auto;
+     -moz-hyphens: auto;
+     -webkit-hyphens: auto;
+     hyphens: auto;
+   }
+   
+   .mat-column-country {
+     word-wrap: break-word !important;
+     white-space: unset !important;
+     flex: 0 0 12% !important;
+     width: 12% !important;
+     overflow-wrap: break-word;
+     word-wrap: break-word;
+     padding-left: 5px!important;
+     word-break: break-word;
+   
+     -ms-hyphens: auto;
+     -moz-hyphens: auto;
+     -webkit-hyphens: auto;
+     hyphens: auto;
+   }
+   
+   .mat-column-dealerID {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 10% !important;
+    width: 10% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+   
+    word-break: break-word;
+  
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+   
+   .mat-column-fullName {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 12% !important;
+    width: 12% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+   
+    word-break: break-word;
+  
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  .mat-column-location {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 13% !important;
+    width: 13% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    
+    word-break: break-word;
+  
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  
+  .mat-column-phoneNumber {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 10% !important;
+    width: 10% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  
+    word-break: break-word;
+  
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  .mat-column-action1 {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 12% !important;
+    width: 12% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  
+    word-break: break-word;
+  
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  .mat-column-action2 {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 9% !important;
+    width: 9% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    
+    word-break: break-word;
+  
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  .sidenav-icon{
+    margin-right: 12px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    padding-right: 8px;
+    border-right: 1px solid #efa5a566;
+    height: 25px;
+  }
+  .no-data{
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    padding: 20px 0px 20px 25px;
+  }
+  // .mat-column-action2 {
+  //   word-wrap: break-word !important;
+  //   white-space: unset !important;
+  //   flex: 0 0 17% !important;
+  //   width: 17% !important;
+  //   overflow-wrap: break-word;
+  //   word-wrap: break-word;
+  
+  //   word-break: break-word;
+  
+  //   -ms-hyphens: auto;
+  //   -moz-hyphens: auto;
+  //   -webkit-hyphens: auto;
+  //   hyphens: auto;
+  // }
+  
+  
+  
+  .mat-success {
+    background-color: green !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-family: 'Segoe UI';
+  }
+  .mat-deactivate {
+    background-color: #D0112B !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-family: 'Segoe UI';
+  }
+  .mat-reset {
+    background-color: #505050 !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-family: 'Segoe UI';
+  }
+  .mat-reset-password {
+    background-color: #2e489c !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-family: 'Segoe UI';
+  }
+  .mat-search {
+    background-color: #D0112B !important;
+    color: #ffffff !important; 
+     font-weight: 600;
+    font-family: 'Segoe UI';
+  
+  }
+  .option{
+    background-color: #e9e9e9;
+    color: black;
+    padding: 5px;
+    font-family: 'Segoe UI';
+    font-size: small;
+  }.fac-dropdown{
+   
+    background-color: #ffffff;
+    border: 1px solid #CCCCCC;
+    color:black;
+    font-size: small;
+  
+    overflow-y: scroll;
+  }
+  .form-group{
+    margin-bottom: 0px !important;
+  }
+  .search-checkbox{
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    padding-left: 13px;
+    font-size: 14px;
+    color: #000;
+ }
+ .mat-table {
+  overflow-x: scroll;
+}
+
+.mat-row,
+.mat-header-row {
+  min-width: 500px;
+}

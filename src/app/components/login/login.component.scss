@@ -1,0 +1,193 @@
+.bg {
+    background-image: URL("../../../assets/img/login-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    // overflow: hidden;
+    position:absolute; 
+    background-color:none !important; 
+    height: 100vh;
+    width: 100% !important;
+
+}
+.example-card {
+    max-width: 1100px;
+  }
+.content{
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom:70px;
+    background-color: transparent;
+
+  }
+  .main-content{
+    background-color: white;
+  
+    border-radius: 40px;
+    // padding-top: 50px;
+    // padding-left: 50px;
+    // padding-right: none;
+    // padding-bottom:50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .login-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0px 40px 40px 0px;
+  }
+  .logo{
+    width: 28%;
+    height: auto; 
+    padding-bottom: 50px;
+    padding-top: 40px;
+  }
+  .header{
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+  .header-line{
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 30px;
+  }
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  .login-btn{
+      width:100%;
+  
+      background-color: #D0112B;
+      color: white;
+      border-radius: 5px;
+      outline: none;
+      border: 0;
+      height: 45px;
+      border: none;
+      
+  }
+  .access-code-btn{
+    width:100%;
+
+    background-color: #666464;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Segoe UI';
+    height: 45px;
+    border: none;
+    outline: none;
+    border: 0;
+    
+}
+::ng-deep .mat-input-wrapper{
+  font-size: 10pt;
+}
+.mat-raised-button[disabled] {
+  background-color: #e2929d;
+  color: white;
+}
+input:focus { 
+  outline: none !important;
+ 
+}
+.login-content{
+  background-color:white;padding-bottom: 40px;padding-left:80px;
+              border-radius: 40px 40px 40px 40px;padding-right: 40px;
+}
+.access-code-btn[disabled]{
+  background-color: #666464;
+  color: white;
+}
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: #666464 !important;
+ }
+
+ ::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: #666464 !important;
+} 
+
+::ng-deep.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color: #666464 !important;;
+}
+.img-show {
+  display:inline-block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@media only screen and (max-width: 600px) {
+  .img-show {
+    display: none;
+  }
+  .content{
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom:40px;
+    background-color: transparent;
+
+  }
+  .logo{
+    width: 50%;
+    height: auto; 
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+  .login-content{
+    background-color:white;padding-bottom: 40px;padding-left:40px;
+                border-radius: 40px 40px 40px 40px;padding-right: 40px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .img-show {
+    display: none;
+  }
+
+}
+@media only screen and (max-width: 1100px) {
+  .login-content{
+    background-color:white;padding-bottom: 40px;padding-left:40px;
+                border-radius: 40px 40px 40px 40px;padding-right: 20px;
+  }
+
+}
+@media only screen and (max-width: 300px) {
+  .login-content{
+    background-color:white;padding-bottom: 40px;padding-left:1px;
+                border-radius: 40px 40px 40px 40px;padding-right: 1px;
+  }
+  .content{
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom:70px;
+    background-color: transparent;
+
+  }
+  .bg {
+    background-image: URL("../../../assets/img/login-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    // overflow: hidden;
+    position:absolute; 
+    background-color:none !important; 
+    height: 120vh;
+    width: 100% !important;
+
+}
+
+}

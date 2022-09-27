@@ -1,0 +1,72 @@
+React material UI icons 
+
+code for the bellow link 
+----------HeaderIcon--------
+home icon 
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+
+Logout icon
+import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
+
+------------------------------------
+
+---------Footer Icon------------------
+scan icon
+import QrCodeScannerIcon from '@mui/icons-material/QrCodeScanner';
+
+Profile settings icon 
+import ManageAccountsOutlinedIcon from '@mui/icons-material/ManageAccountsOutlined';
+
+My Complaints icon
+import ReportGmailerrorredOutlinedIcon from '@mui/icons-material/ReportGmailerrorredOutlined';
+
+------------------------------------
+
+---------Login and registeration page(Sign Up) ------------------
+
+Email Address
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+
+Phone Number 
+import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
+
+password eye 
+show
+import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
+
+hide
+import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
+
+date picker
+import DateRangeOutlinedIcon from '@mui/icons-material/DateRangeOutlined';
+
+back button arrow
+import KeyboardBackspaceOutlinedIcon from '@mui/icons-material/KeyboardBackspaceOutlined';
+
+-------------------------------------------------------------------
+
+--------------------- other icons needed--------------
+
+Camera(Profile settings page)
+import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
+
+keybroard arrow (used in bimeda category page)
+import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
+
+
+Location
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+
+upload
+import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
+
+download
+import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
+
+add products(dashboard page)
+import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
+
+
+
+
+
